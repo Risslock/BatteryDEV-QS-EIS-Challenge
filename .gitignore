@@ -1,4 +1,6 @@
 
+.keras/
+.local/
 
 # Created by https://www.toptal.com/developers/gitignore/api/python,visualstudiocode,pycharm,git,vim
 # Edit at https://www.toptal.com/developers/gitignore?templates=python,visualstudiocode,pycharm,git,vim
