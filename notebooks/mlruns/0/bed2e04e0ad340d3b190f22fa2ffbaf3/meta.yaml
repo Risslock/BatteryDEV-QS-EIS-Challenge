@@ -1,0 +1,15 @@
+artifact_uri: file:///home/eis-user/notebooks/mlruns/0/bed2e04e0ad340d3b190f22fa2ffbaf3/artifacts
+end_time: 1647902073584
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+name: ''
+run_id: bed2e04e0ad340d3b190f22fa2ffbaf3
+run_uuid: bed2e04e0ad340d3b190f22fa2ffbaf3
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1647902068960
+status: 4
+tags: []
+user_id: eis-user

@@ -1,0 +1,44 @@
+Model: "model"
+__________________________________________________________________________________________________
+ Layer (type)                   Output Shape         Param #     Connected to                     
+==================================================================================================
+ input_1 (InputLayer)           [(None, 83, 3)]      0           []                               
+                                                                                                  
+ input_2 (InputLayer)           [(None, 83)]         0           []                               
+                                                                                                  
+ lstm (LSTM)                    (None, 83, 16)       1280        ['input_1[0][0]',                
+                                                                  'input_2[0][0]']                
+                                                                                                  
+ lstm_1 (LSTM)                  (None, 83, 8)        800         ['lstm[0][0]']                   
+                                                                                                  
+ lstm_2 (LSTM)                  (None, 83, 8)        544         ['lstm_1[0][0]']                 
+                                                                                                  
+ conv1d (Conv1D)                (None, 81, 32)       800         ['lstm_2[0][0]']                 
+                                                                                                  
+ dropout (Dropout)              (None, 81, 32)       0           ['conv1d[0][0]']                 
+                                                                                                  
+ conv1d_1 (Conv1D)              (None, 79, 16)       1552        ['dropout[0][0]']                
+                                                                                                  
+ dropout_1 (Dropout)            (None, 79, 16)       0           ['conv1d_1[0][0]']               
+                                                                                                  
+ conv1d_2 (Conv1D)              (None, 77, 8)        392         ['dropout_1[0][0]']              
+                                                                                                  
+ dropout_2 (Dropout)            (None, 77, 8)        0           ['conv1d_2[0][0]']               
+                                                                                                  
+ global_average_pooling1d (Glob  (None, 8)           0           ['dropout_2[0][0]']              
+ alAveragePooling1D)                                                                              
+                                                                                                  
+ batch_normalization (BatchNorm  (None, 8)           32          ['global_average_pooling1d[0][0]'
+ alization)                                                      ]                                
+                                                                                                  
+ dense (Dense)                  (None, 8)            72          ['batch_normalization[0][0]']    
+                                                                                                  
+ dense_1 (Dense)                (None, 8)            72          ['dense[0][0]']                  
+                                                                                                  
+ dense_2 (Dense)                (None, 9)            81          ['dense_1[0][0]']                
+                                                                                                  
+==================================================================================================
+Total params: 5,625
+Trainable params: 5,609
+Non-trainable params: 16
+__________________________________________________________________________________________________

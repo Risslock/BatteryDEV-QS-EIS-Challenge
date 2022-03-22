@@ -1,0 +1,15 @@
+artifact_uri: file:///home/eis-user/notebooks/mlruns/0/ff1c648ca151486e875a84e3273cba32/artifacts
+end_time: 1647900949487
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+name: ''
+run_id: ff1c648ca151486e875a84e3273cba32
+run_uuid: ff1c648ca151486e875a84e3273cba32
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1647900923927
+status: 4
+tags: []
+user_id: eis-user
