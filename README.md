@@ -51,7 +51,7 @@ To install the Docker environment, you need to have Docker installed, then run:
 cp environments/docker-compose.yml .
 cp environments/Dockerfile .
 cp environments/jupyter.sh .
-docker-compose build
+docker compose build
 ```
 
 The Docker container is setup to run a juypter lab server on start. You can start it with `docker-compose up`.
